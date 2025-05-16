@@ -1,5 +1,5 @@
 export default function ProductCard (props) {
-  const {productItem:{id,image,price,category,description,title,rating}} = props
+  const {productItem:{id,image,price,category,description,title,rating},addToCart} = props
   return (
  <li className="list-row">
       <div>
@@ -13,9 +13,7 @@ export default function ProductCard (props) {
       </div>
       <p className="list-col-wrap text-xs">{description}</p>
       <button className="btn">{price}</button>
-      <button className="btn">
-        rate: {rating.rate} count: {rating.count}
-      </button>
+      <button className="btn" onClick={()=>addToCart(id,title,price)} >Add to Cart</button>
     </li>
   )
 }
