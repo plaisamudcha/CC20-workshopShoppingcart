@@ -1,5 +1,6 @@
-export default function CartCount () {
+export default function CartCount (props) {
+  const {itemCount} = props
   return (
-    <div>Cartcount</div>
+    <div>Cartcount : {itemCount}</div>
   )
 }
