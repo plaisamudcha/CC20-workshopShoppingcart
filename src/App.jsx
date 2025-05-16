@@ -1,10 +1,16 @@
 import { useEffect,useState } from 'react'
+import Header from './components/Header'
+import ProductList from "./components/ProductList"
+import CardSummary from "./components/CartSummary"
 
 function App() {
   return (
-    <div>
-      <h1 className='text-3xl'>Codecamp20</h1>
-      <button className='btn'>OK</button>
+    <div className='flex flex-col h-screen'>
+      <Header />
+      <div className="flex flex-1">
+        <ProductList />
+        <CardSummary />
+      </div>
     </div>
   )
 }
