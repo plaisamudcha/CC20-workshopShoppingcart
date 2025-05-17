@@ -1,6 +1,11 @@
-export default function CartCount (props) {
-  const {itemCount} = props
+export default function CartCount(props) {
+  const { itemCount } = props;
   return (
-    <div>Cartcount : {itemCount}</div>
-  )
+    <div className="indicator">
+      <span className="indicator-item badge badge-secondary">{itemCount}</span>
+      <p>
+        <i class="fa-solid fa-cart-shopping text-4xl"></i>
+      </p>
+    </div>
+  );
 }
