@@ -10,7 +10,7 @@ export default function CartSummary(props) {
   const tax = total * 0.07;
   const sum = total + tax;
   return (
-    <div className=" p-4 w-1/3 flex flex-col gap-4">
+    <div className=" p-4 w-3/8 flex flex-col gap-4">
       <h2 className="border border-gray-500 text-2xl rounded p-2 w-auto inline">
         Cart Item :
       </h2>
