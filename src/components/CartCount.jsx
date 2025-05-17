@@ -4,7 +4,7 @@ export default function CartCount(props) {
     <div className="indicator">
       <span className="indicator-item badge badge-secondary">{itemCount}</span>
       <p>
-        <i class="fa-solid fa-cart-shopping text-4xl"></i>
+        <i className="fa-solid fa-cart-shopping text-4xl"></i>
       </p>
     </div>
   );
